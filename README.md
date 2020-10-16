@@ -13,7 +13,10 @@ and adding (by NuGet) the following packages:
 *Accord
 *Accord.Math
 
-After built, the DLL (placed in \bin\Release) can be included into SolidWorks,
+After built the solution, register the DLL (placed in \bin\Release) using the following commands in the cmd (run as administrator):
+* cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+* regasm.exe "PATH OF THE AngelSix-MenusAndToolbars.dll" /codebase
+Now the plug-in can be included into SolidWorks,
 * In the SolidWorks application, go under Tools-->Add-ins...
 * Check "Menus and Toolbars"
 
